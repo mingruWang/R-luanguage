@@ -1,0 +1,18 @@
+需要加載的package：library(tidyverse) library(ggplot2) library(maps) library(viridis) library(readr)
+
+ggplot2：是統計程式語言R的一個數據可視化繪圖包。
+
+data base: 
+
+Confirmed <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")).
+
+希望可以做出不同時間段世界疫情的變化
+
+加載世界地圖：
+
+world <-map_data("world") ggplot() +geom_polygon(data=world, aes(x=long, y=lat, group=group), fill="grey")
+
+導入死亡案例和治愈案例：
+
+Deaths <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv")) Recovered <-read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv"))
+
