@@ -5,7 +5,7 @@ ggplot2：是統計程式語言R的一個數據可視化繪圖包。
 data base: 
 
 Confirmed <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")).
-
+5.27更新：https://github.com/CSSEGISandData/COVID-19。若无法用上述指令下载，请到此网址下载数据。每日跟新，这里截取到5.20日
 希望可以做出不同時間段世界疫情的變化
 
 加載世界地圖：
